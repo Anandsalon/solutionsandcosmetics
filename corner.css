@@ -1,0 +1,49 @@
+body {
+    background: #f7f2ec;
+}
+.corners { 
+    background: #FFF;
+    height: 420px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    margin-right: 800px;
+    margin-left: 700px;
+    max-width: 350px;
+    line-height:25px;
+    position: relative;
+    width: 80%;
+    font-family:arial; font-size:14px; font-weight:bold; padding:10px; padding-top:40px;
+    -webkit-box-shadow: 0 1px 7px hsla(0,0%,0%,.2);
+       -moz-box-shadow: 0 1px 7px hsla(0,0%,0%,.2);
+            box-shadow: 0 1px 7px hsla(0,0%,0%,.2);
+}
+
+/* Corner Effect */
+.corners:after,
+.corners:before {
+    background: #f7f2ec;
+    content: '';
+    height: 50px;
+    position: absolute;
+    top: -25px;
+    width: 100px;
+    -webkit-box-shadow: 0 5px 10px -7px hsla(0,0%,0%,.5);
+       -moz-box-shadow: 0 5px 10px -7px hsla(0,0%,0%,.5);
+            box-shadow: 0 5px 10px -7px hsla(0,0%,0%,.5);
+}
+.corners:after {
+    left: -50px;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+.corners:before {
+    right: -50px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
